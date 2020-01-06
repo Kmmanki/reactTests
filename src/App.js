@@ -1,7 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import QuizComponent from './components/quiz/QuizComponent';
+import LoopEx from './components/day3/LoopEx';
+import ItemComponent from './components/day3/ItemComponent';
+// import QuizComponent from './components/quiz/QuizComponent';
 
 const arr1 = [
   { title: "quiz1", answer: "1" },
@@ -23,8 +25,11 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <QuizComponent arr={arr1}></QuizComponent>
-        <QuizComponent arr={arr2}></QuizComponent>
+        {/* <QuizComponent arr={arr1}></QuizComponent>
+        <QuizComponent arr={arr2}></QuizComponent> */}
+        <ItemComponent></ItemComponent>
+        <LoopEx></LoopEx>
+
       </header>
     </div>
   );
